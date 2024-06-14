@@ -128,6 +128,7 @@ int main() //função principal onde roda o nucleo do projeto
 	    printf("\t1 - Registrar nomes\n");
 	    printf("\t2 - Consultar nomes\n");
 	    printf("\t3 - Deletar nomes\n\n"); //fim do menu
+	    printf("\t4 - Sair do sistema\n\n");
 	    printf("opção: ");
 	    
         scanf("%d,", &opcao); //armazenando a escolha do usuário
@@ -147,6 +148,11 @@ int main() //função principal onde roda o nucleo do projeto
 		    
 		    case 3:
 		    deletar(); //chamada de funções
+			break;
+			
+			case 4:
+			printf("Obrigado por utulizar o sistema!\n");
+			return 0;
 			break;
 			
 			default: 
